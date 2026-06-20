@@ -1,0 +1,56 @@
+Data:
+ queries.csv          — 400 real banking support queries
+                        columns: query_id, text
+ 
+ duplicate_pairs.csv  — for evaluation only, do not use during
+                        building. 60 pairs of queries that
+                        describe the same issue written
+                        differently, labelled easy / medium / hard
+ 
+Task:
+Build a pipeline with three phases:
+ 
+1. Duplicate detection (classical methods, DL, etc)
+  Find pairs of queries in queries.csv that describe the same
+  underlying issue.
+ 
+2. Clustering
+  Group the unique queries by issue type. Choose the number of
+  clusters yourself and justify it.
+ 
+3. Labelling and ops report
+  Use an LLM to label each cluster and generate a short weekly
+  ops report: top issues by volume, anything that needs
+  escalation, and two recommendations for the support team.
+ 
+Required metrics:
+ 
+           Phase 1 — precision, recall, F1 against
+                     duplicate_pairs.csv overall and split by
+                     easy / medium / hard. Analyse at least 3
+                     pairs your system missed and explain why.
+ 
+           Phase 2 — compare silhouette scores across at least two values of k and explain your final choice. What % of the ground-truth duplicate pairs end up in the same cluster?
+ 
+           Phase 3 — total LLM call count and estimated cost.
+ 
+ README    architecture decisions and tradeoffs, eval results,
+           what you would improve with more time.
+ 
+ 
+ 
+ 
+Example LLM usage:
+curl -s http://10.205.205.27:8887/v1/chat/completions \
+ -H "Authorization: Bearer test_key_q19" \
+ -H "Content-Type: application/json" \
+ -d '{
+   "model": "/models/gemma-4-26B-A4B-it",
+   "messages": [
+     {"role": "user", "content": "A farmer has 17 sheep, all but 9 die. How many are left?"}
+   ],
+   "max_tokens": 500,
+   "temperature": 0.7,
+   "chat_template_kwargs": {"enable_thinking": true}
+ }'
+ 
