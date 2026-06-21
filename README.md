@@ -6,15 +6,18 @@ A three-phase pipeline over 400 real banking support queries:
 2. **Clustering** — group unique queries by issue type.
 3. **Labelling & ops report** — LLM-label each cluster and write a weekly ops report.
 
-> **Status:** Phase 0 (EDA) complete. Phases 1–3 in progress.
+> **Status:** Phase 0 (EDA) + Phase 1 (dedup) complete. Phases 2–3 in progress.
 
 ## Layout
 
-Each phase is a self-contained directory with its own README.
+Each phase has its own directory and README; shared infra lives in `lib/`.
 
 ```
-data/    queries.csv, duplicate_pairs.csv (eval only)
-eda/     Phase 0 — data review (see eda/README.md)
+data/           queries.csv, duplicate_pairs.csv (eval only)
+lib/            shared infra: data loading, text signals, eval metrics
+eda/            Phase 0 — data review (see eda/README.md)
+phase1_dedup/   Phase 1 — hybrid duplicate detection (see its README.md)
+artifacts/      cached embeddings (gitignored)
 ```
 
 ## Setup
@@ -24,7 +27,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Then run a phase, e.g. `python eda/eda_script.py`.
+Then run a phase, e.g. `python eda/eda_script.py` or `python phase1_dedup/dedup.py`.
 
 ## Results & write-up
 

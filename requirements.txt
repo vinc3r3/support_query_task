@@ -7,5 +7,6 @@ scipy==1.17.1
 matplotlib==3.11.0
 rapidfuzz==3.14.5
 tabulate==0.10.0
-# Phase 1/2 semantic embeddings + Phase 3 LLM client are added as those
-# phases land (sentence-transformers, hdbscan, openai/httpx, tiktoken).
+# Phase 1/2 semantic embeddings:
+sentence-transformers==5.6.0
+# Phase 3 LLM client is added when that phase lands (openai/httpx, tiktoken).
