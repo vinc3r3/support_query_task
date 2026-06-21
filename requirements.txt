@@ -1,0 +1,11 @@
+# q19 pipeline dependencies.
+# Phase 0 (EDA) + Phase 1/2 classical signals:
+pandas==3.0.3
+numpy==2.4.6
+scikit-learn==1.9.0
+scipy==1.17.1
+matplotlib==3.11.0
+rapidfuzz==3.14.5
+tabulate==0.10.0
+# Phase 1/2 semantic embeddings + Phase 3 LLM client are added as those
+# phases land (sentence-transformers, hdbscan, openai/httpx, tiktoken).
