@@ -1,0 +1,26 @@
+q1,q2,cos,text_1,text_2
+Q109,Q121,0.997,How can I get my card to work?,How do I get my card to work?
+Q111,Q337,0.993,"My PIN is blocked, what do I do?","My PIN has been blocked, what should I do?"
+Q107,Q370,0.984,How do I go about changing my address?,How do I change my address?
+Q085,Q296,0.983,How is my card payment still pending?,Why is the payment from my card still pending?
+Q270,Q384,0.98,"In my statement, there was an extra €1 fee",There is a €1 extra fee in my statement
+Q114,Q348,0.98,Recipient has not received the money,My recipient hasn't received the money
+Q023,Q227,0.98,I have been double charged,I was double charged
+Q059,Q278,0.978,How can I fix a problem where contactless isn't working?,How do I troubleshoot when contactless doesn't work?
+Q033,Q041,0.977,"My top-up failed, WHY?",please tell me why my top-up failed.
+Q041,Q394,0.974,please tell me why my top-up failed.,Why was my top-up unsuccessful?
+Q132,Q168,0.972,I need to activate my card.,My card needs to be activated.
+Q130,Q261,0.972,What do I do if my card was stolen.,What should I do if I think my card was stolen?
+Q179,Q379,0.972,What is the process to change my PIN?,How do I go about changing my PIN?
+Q152,Q211,0.971,"Um, my top up didn't work",I believe my top up did not work.
+Q003,Q123,0.971,Seems like my top-up has failed,I believe my top up has failed
+Q033,Q394,0.97,"My top-up failed, WHY?",Why was my top-up unsuccessful?
+Q007,Q160,0.97,How do I cancel my transfer?,Is there any way to cancel a transfer?
+Q076,Q162,0.968,"Hi, I'm trying to purchase a flat and I'm needing the first payment for the mortgage to go through on the flat I'm trying to buy. For some reason I keep getting an error.can you assist in making this transfer? What is going on?",Please help me make a transfer. I keep receiving an error and I'm trying to make the initial mortgage payment for a flat I'm buying. What is the deal here?
+Q222,Q262,0.968,What do I do?  My card is broken.,My card is broken
+Q379,Q399,0.967,How do I go about changing my PIN?,Is there a way yo change my PIN?
+Q186,Q215,0.967,Help my prove my identity.,Can you help me with proving my identity?
+Q220,Q231,0.966,"Heyy I tried to top up with my card today but it failed! I just got the couple days before but it has worked last time. What's going on, can you double check please?","Hey, I attempted to top up my card today and for some reason it didn't work. When I did it the other way it worked just fine. Could you help me figure out why this is happening please?"
+Q268,Q278,0.966,How do I troubleshoot my contactless?,How do I troubleshoot when contactless doesn't work?
+Q045,Q328,0.966,Why is it saying I have a pending payment?,Why is this payment pending?
+Q105,Q330,0.966,How long will my payment be pending?,When will my pending payment finish?

@@ -1,0 +1,17 @@
+pair,difficulty,cos,fuzzy,text_1,text_2
+Q077~Q229,hard,0.641,0.345,What is the dollar that I have pending on my statement there?,Why did you charge me extra?
+Q005~Q228,hard,0.648,0.342,My contactless is non-functional.,Would reinstalling the app solve the problem?
+Q013~Q060,hard,0.693,0.444,Why wasn't my bank balance updated?,I made a transfer and am still waiting.
+Q019~Q023,hard,0.694,0.333,My statement shows different transaction times.,I have been double charged
+Q027~Q320,hard,0.7,0.185,"Hi, I am on vacation in Spain and someone stole my bag with my phone and wallet with cards and everything. Can you block it ASAP and then I want to order a new one also ASAP.","card is lost, please help"
+Q048~Q064,hard,0.709,0.358,I dont see my reciept,I transferred some money but the receiver can't pick it up for some reason.
+Q017~Q314,hard,0.712,0.489,Can you tell me why my transfer is failing and help resolve?,The transger I tried to make failed.
+Q030~Q140,hard,0.719,0.353,This card payment isn't is recognition.,I did not charge my account for that transaction.  That's an error.
+Q029~Q058,hard,0.724,0.437,I've just been married and need to update my name,Can you walk me through how I can edit some of my personal information?
+Q001~Q070,hard,0.735,0.29,I seem to be unable to make any transactions.,My card won't work.
+Q002~Q018,hard,0.736,0.308,Problem verifying my account,The app won't let me log in as myself.
+Q024~Q185,hard,0.769,0.424,I am on vacation in Spain and think someone saw my pin when… Can I change it at a local ATM?,If I want to select a new PIN what do I do?
+Q074~Q347,hard,0.772,0.667,Is my new card activated?,What do I do to activate?
+Q216~Q297,hard,0.782,0.439,Why is my purchase showing as pending?,I have a payment that hasn't went through yet.
+Q035~Q392,hard,0.785,0.418,I just initiated a transfer but I'd like to cancel it.,My transaction is on the wrong account.
+Q099~Q124,hard,0.787,0.462,Can you tell me if I can track the card you sent me?,"I was supposed to receive my new card by now, but it hasn't came in."
