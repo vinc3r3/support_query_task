@@ -107,12 +107,17 @@ def run_model(alias, texts, ids, gt):
 
 
 def components(pred):
+    """Connected components of the predicted-duplicate graph.
+
+    Iterate in sorted order and sort the result so the output is deterministic
+    across runs (set iteration order is not stable under hash randomisation).
+    """
     adj = {}
     for a, b in pred:
         adj.setdefault(a, set()).add(b)
         adj.setdefault(b, set()).add(a)
     seen, comps = set(), []
-    for node in adj:
+    for node in sorted(adj):
         if node in seen:
             continue
         stack, comp = [node], set()
@@ -122,9 +127,9 @@ def components(pred):
                 continue
             seen.add(x)
             comp.add(x)
-            stack.extend(adj[x] - seen)
+            stack.extend(sorted(adj[x] - seen))
         comps.append(comp)
-    return comps
+    return sorted(comps, key=lambda c: (-len(c), min(c)))
 
 
 # ---------------------------------------------------------------------------
