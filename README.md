@@ -6,7 +6,7 @@ A three-phase pipeline over 400 real banking support queries:
 2. **Clustering** — group unique queries by issue type.
 3. **Labelling & ops report** — LLM-label each cluster and write a weekly ops report.
 
-> **Status:** Phase 0 (EDA) + Phase 1 (dedup) complete. Phases 2–3 in progress.
+> **Status:** Phases 0 (EDA), 1 (dedup) and 2 (clustering) complete. Phase 3 in progress.
 
 ## Layout
 
@@ -17,6 +17,7 @@ data/           queries.csv, duplicate_pairs.csv (eval only)
 lib/            shared infra: data loading, text signals, eval metrics
 eda/            Phase 0 — data review (see eda/README.md)
 phase1_dedup/   Phase 1 — hybrid duplicate detection (see its README.md)
+phase2_cluster/ Phase 2 — clustering by issue type (see its README.md)
 artifacts/      cached embeddings (gitignored)
 ```
 
