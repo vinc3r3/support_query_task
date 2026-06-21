@@ -1,4 +1,4 @@
-# q19 — Banking support query deduplication, clustering & ops reporting
+# Banking support query deduplication, clustering & ops reporting
 
 A three-phase pipeline over 400 real banking support queries:
 
